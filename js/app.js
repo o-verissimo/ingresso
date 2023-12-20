@@ -32,7 +32,7 @@ function comprar(){
                
         case 'pista':
             if (quantidade > qtdPista){
-                alert(`quantidade indisponível para Cadeira Superior!`); 
+                alert(`quantidade indisponível para Pista!`); 
             }else{
                 qtdPista = (qtdPista - quantidade);
                 document.getElementById('qtd-pista').textContent = qtdPista;
