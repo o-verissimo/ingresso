@@ -10,8 +10,10 @@ function comprar(){
     let qtdInferior = parseInt(document.getElementById('qtd-inferior').textContent);
     
     switch (ingresso){
+
         case 'inferior':
             if (quantidade > qtdInferior){
+
                 qtdInferior = qtdInferior - quantidade;
                 qtdInferior.document.getElementById('qtd-inferior').textContent = qtdInferior;
             }else{
@@ -22,16 +24,19 @@ function comprar(){
        
         case 'superior':
             if (quantidade > qtdSuperior){
+
                 qtdSuperior = qtdSuperior - quantidade;
                 qtdSuperior.document.getElementById('qtd-superior').textContent = qtdSuperior;
             }else{
                   alert(`quantidade indisponível para Cadeira Superior!`); 
             }       
+
         break;   
                
-
         case 'pista':
+
             if (quantidade > qtdPista){
+
                 qtdPista = qtdPista - quantidade;
                 qtdPista.document.getElementById('qtd-pista').textContent = qtdPista;
             }else{
