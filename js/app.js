@@ -1,4 +1,3 @@
-
 function comprar(){
 
     //recuperar os tipos de ingresso e quantidade
