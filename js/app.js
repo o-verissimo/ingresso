@@ -15,7 +15,7 @@ function comprar(){
                 qtdInferior = qtdInferior - quantidade;
                 qtdInferior.document.getElementById('qtd-inferior').textContent = qtdInferior;
             }else{
-                  alert(`quantidade indisponível para Pista!`); 
+                  alert(`quantidade indisponível para Cadeira Inferior!`); 
             }  
                         
         break;
@@ -25,7 +25,7 @@ function comprar(){
                 qtdSuperior = qtdSuperior - quantidade;
                 qtdSuperior.document.getElementById('qtd-superior').textContent = qtdSuperior;
             }else{
-                  alert(`quantidade indisponível para Pista!`); 
+                  alert(`quantidade indisponível para Cadeira Superior!`); 
         break;   
 
         case 'pista':
