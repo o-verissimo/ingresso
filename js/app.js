@@ -16,7 +16,7 @@ function comprar(){
             }else{
                   qtdInferior = qtdInferior - quantidade;
                   document.getElementById('qtd-inferior').textContent = qtdInferior;
-                  alert(`Compra realziada com sucesso!`);
+                  alert(`Compra realizada com sucesso!`);
                 }             
         break;
 
@@ -26,7 +26,7 @@ function comprar(){
             }else{
                 qtdSuperior = qtdSuperior - quantidade;
                 document.getElementById('qtd-superior').textContent = qtdSuperior;
-                alert(`Compra realziada com sucesso!`);
+                alert(`Compra realizada com sucesso!`);
             }       
         break;   
                
@@ -36,7 +36,7 @@ function comprar(){
             }else{
                 qtdPista = (qtdPista - quantidade);
                 document.getElementById('qtd-pista').textContent = qtdPista;
-                alert(`Compra realziada com sucesso!`);
+                alert(`Compra realizada com sucesso!`);
             } 
         break;                      
     }  
