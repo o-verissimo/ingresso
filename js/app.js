@@ -8,27 +8,29 @@ function comprar(){
     let qtdPista = parseInt(document.getElementById('qtd-pista').textContent);
     let qtdSuperior = parseInt(document.getElementById('qtd-superior').textContent);
     let qtdInferior = parseInt(document.getElementById('qtd-inferior').textContent);
+
+    console.log(quantidade, qtdPista)  
     
     switch (ingresso){
 
         case 'inferior':
             if (quantidade > qtdInferior){
-
-                qtdInferior = qtdInferior - quantidade;
-                qtdInferior.document.getElementById('qtd-inferior').textContent = qtdInferior;
+                alert(`quantidade indisponível para Cadeira Inferior!`); 
             }else{
-                  alert(`quantidade indisponível para Cadeira Inferior!`); 
-            }  
+                  qtdInferior = qtdInferior - quantidade;
+                  document.getElementById('qtd-inferior').textContent = qtdInferior;
+                  alert(`Compra realziada com sucesso!`);
+                }  
                         
         break;
        
         case 'superior':
             if (quantidade > qtdSuperior){
-
-                qtdSuperior = qtdSuperior - quantidade;
-                qtdSuperior.document.getElementById('qtd-superior').textContent = qtdSuperior;
+                alert(`quantidade indisponível para Cadeira Superior!`); 
             }else{
-                  alert(`quantidade indisponível para Cadeira Superior!`); 
+                qtdSuperior = qtdSuperior - quantidade;
+                document.getElementById('qtd-superior').textContent = qtdSuperior;
+                alert(`Compra realziada com sucesso!`);
             }       
 
         break;   
@@ -36,12 +38,13 @@ function comprar(){
         case 'pista':
 
             if (quantidade > qtdPista){
-
-                qtdPista = qtdPista - quantidade;
-                qtdPista.document.getElementById('qtd-pista').textContent = qtdPista;
+                alert(`quantidade indisponível para Cadeira Superior!`); 
             }else{
-                alert(`quantidade indisponível para Pista!`); 
-            }  
+                qtdPista = (qtdPista - quantidade);
+                document.getElementById('qtd-pista').textContent = qtdPista;
+                alert(`Compra realziada com sucesso!`);
+            } 
+
         break;                      
             
     
