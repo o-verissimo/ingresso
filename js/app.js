@@ -46,8 +46,5 @@ function comprar(){
             } 
 
         break;                      
-            
-    
-
     }  
 }
